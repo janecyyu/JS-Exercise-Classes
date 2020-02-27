@@ -153,6 +153,7 @@ class Instructor extends Lambdasian {
       return Math.floor((Math.random()*100)+1);
     }
 }
+
 /*
   TASK 5
     - Write a Student class extending Lambdasian.
@@ -262,63 +263,83 @@ if (typeof exports !== "undefined") {
   }
 }
 //test for task1
-// const person = new Person("Mike",5);
-// console.log(person);
-// console.log(person.eat("noodle"));
-// console.log(person.eat("pizza"));
-// console.log(person.poop());
-// console.log(person.toString());
+/*const person = new Person("Mike",5);
+console.log(person);
+console.log(person.eat("noodle"));
+console.log(person.eat("pizza"));
+console.log(person.poop());
+console.log(person.toString());*/
 
 //test for task 2
-// const herCarInfo = {
-//   model: "model X",
-//   milesPerGallon: 10
-// };
-// // const herCar = new Car(herCarInfo);
-// // console.log(herCar);
-// // console.log(herCar.fill(60));
-// // console.log(herCar.drive(550));
-// // console.log(herCar.drive(601));
+/*const herCarInfo = {
+  model: "model X",
+  milesPerGallon: 10
+};
+const herCar = new Car(herCarInfo);
+console.log(herCar);
+console.log(herCar.fill(60));
+console.log(herCar.drive(550));
+console.log(herCar.drive(601));*/
 
-//test for task 3
-// const studentOne = {
-//   name: "John",
-//   age: "33",
-//   location: "Seattle"
-// };
-// const John = new Lambdasian(studentOne);
-// console.log(John);
-// console.log(John.speak());
+/*test for task 3
+const studentOne = {
+  name: "John",
+  age: "33",
+  location: "Seattle"
+};
+const John = new Lambdasian(studentOne);
+console.log(John);
+console.log(John.speak());*/
 
 //test for task 4
-// const Gary = {
-//   name: "Gary",
-//   age: "40",
-//   location: "Boston",
-//   specialty: "HTML",
-//   favLanguage: "C++",
-//   catchPhrase: "Try again!"
-// };
-// const studentTom = {
-//   name: "Tom",
-//   age: 17
-// };
-// const InstruGary = new Instructor(Gary);
-// console.log(InstruGary);
-// console.log(InstruGary.demo("CSS"));
-// console.log(InstruGary.grade(studentTom, "ES6"));
+/*const Gary = {
+  name: "Gary",
+  age: "40",
+  location: "Boston",
+  specialty: "HTML",
+  favLanguage: "C++",
+  catchPhrase: "Try again!"
+};
+const studentTom = {
+  name: "Tom",
+  age: 17
+};
+const InstruGary = new Instructor(Gary);
+console.log(InstruGary.gradeGive());
+console.log(InstruGary.demo("CSS"));
+console.log(InstruGary.grade(studentTom, "ES6"));*/
 
 // test for task 6
-// const May = new ProjectManager({
-//   name: "May",
-//   age: "20",
-//   location: "Boston",
-//   specialty: "HTML",
-//   favLanguage: "C++",
-//   catchPhrase: "Try again!",
-//   gradClassName: "web100",
-//   favInstructor: "Jackie"
-// })
-// console.log(May);
-// console.log(May.debugsCode({name: "Jo-Jo"}, "Python"));
-// console.log(May.standUp("web200"));
+/*const May = new ProjectManager({
+  name: "May",
+  age: "20",
+  location: "Boston",
+  specialty: "HTML",
+  favLanguage: "C++",
+  catchPhrase: "Try again!",
+  gradClassName: "web100",
+  favInstructor: "Jackie"
+})
+console.log(May);
+console.log(May.debugsCode({name: "Jo-Jo"}, "Python"));
+console.log(May.standUp("web200"));*/
+
+//test for stretch
+/*const Gary = {
+  name: "Gary",
+  age: "40",
+  location: "Boston",
+  specialty: "HTML",
+  favLanguage: "C++",
+  catchPhrase: "Try again!"
+};
+const InstruGary = new Instructor(Gary);
+const studentOne = new Student({
+  name:"Sandy",
+  age:10,
+  location: "Austin",
+  className: "web20",
+  favSubjects: "JAVA",
+  grade: InstruGary.gradeGive(),
+})
+console.log(`Your score is ${studentOne.grade}. `+ studentOne.graduate());*/
